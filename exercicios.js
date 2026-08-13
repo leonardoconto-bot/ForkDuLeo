@@ -20,7 +20,30 @@
 // o resultado da soma, subtração, multiplicação e divisão.
 // ------------------------------------------------------------
 
-
+let valor1
+let valor2
+let operacao
+valor1 = parseFloat(prompt("Digite o 1º número: "))
+valor2 = parseFloat(prompt("Digite o 2º número: "))
+operacao = prompt("Escolha a operação (+, -, *, /): ")
+let resultado
+switch (operacao) {
+    case '+':
+        resultado = valor1 + valor2
+        break
+    case '-':
+        resultado = valor1 - valor2
+        break
+    case '*':
+        resultado = valor1 * valor2
+        break
+    case '/':
+        resultado = valor1 / valor2
+        break
+    default:
+        resultado = "Operação inválida!"
+}
+alert("O resultado é: " + resultado)
 
 
 // EXERCÍCIO 2 - Conversor de temperatura
