@@ -83,7 +83,15 @@ if (numero % 2 === 0){
 // Se não, mostre "Reprovado".
 // ------------------------------------------------------------
 
-
+let matt = 8.3
+let fis = 6.8
+let geo = 10
+let media = (matt + fis + geo / 2)
+if (media >= 7){
+    console.log("Aprovado!")
+} else{
+    console.log("Reprovado!")
+}
 
 
 // ============================================================
@@ -97,7 +105,12 @@ if (numero % 2 === 0){
 // Se não, mostre "Menor de idade".
 // ------------------------------------------------------------
 
-
+let idade = 19
+if (idade >= 18){
+    console.log("Maior de Idade!")
+} else{
+    console.log("Menor de Idade!")
+}
 
 
 // EXERCÍCIO 6 - Calculadora de IMC
