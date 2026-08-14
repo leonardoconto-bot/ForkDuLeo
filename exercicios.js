@@ -52,6 +52,10 @@ alert("O resultado é: " + resultado)
 // Fórmula: F = C * 9/5 + 32
 // ------------------------------------------------------------
 
+let celsius
+celsius = parseFloat(prompt("Digite o valor da sua temperatura em °C!"))
+let fahrenheit = (celsius * 9/5 + 32)
+console.log('A sua temperatura é', fahrenheit, " em °F!")
 
 
 
@@ -62,6 +66,13 @@ alert("O resultado é: " + resultado)
 // Se numero % 2 === 0, é par.
 // ------------------------------------------------------------
 
+let numero
+numero = parseFloat(prompt("Digite um número e direi se é Par ou Ímpar!"))
+if (numero % 2 === 0){
+    console.log("Seu número é Par!")
+} else{
+    console.log("Seu número é Ímpar!")
+}
 
 
 
