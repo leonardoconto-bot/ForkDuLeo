@@ -148,7 +148,12 @@ if (peso < 18.5) {
 // Compare as jogadas e mostre quem ganhou.
 // ------------------------------------------------------------
 
-
+let opcoes = ['pedra', 'papel', 'tesoura']
+let pc = opcoes[Math.floor(Math.random() * 3)]
+let eu = prompt("pedra, papel ou tesoura?")
+alert("Você: " + eu + " | PC: " + pc)
+if (eu === pc) alert("Empate!")
+else alert("Veja quem ganhou na regra do jogo!")
 
 
 // EXERCÍCIO 8 - Sistema de notas
@@ -161,7 +166,12 @@ if (peso < 18.5) {
 //   2, 1, 0  = "F"
 // ------------------------------------------------------------
 
-
+let nota = 8
+if (nota >= 9) console.log("A")
+else if (nota >= 7) console.log("B")
+else if (nota >= 5) console.log("C")
+else if (nota >= 3) console.log("D")
+else console.log("F")
 
 
 // ============================================================
