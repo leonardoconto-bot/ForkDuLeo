@@ -298,7 +298,9 @@ console.log(contarVogais("javascript"))
 // Remova o último item com pop() e mostre a lista novamente.
 // ------------------------------------------------------------
 
-
+let lista = ["Arroz", "Feijão", "Carne", "Leite", "Pão"]
+lista.pop()
+console.log(lista)
 
 
 // EXERCÍCIO 18 - Maior e menor
@@ -309,7 +311,8 @@ console.log(contarVogais("javascript"))
 // Ou tente fazer com um for (mais desafiador!).
 // ------------------------------------------------------------
 
-
+let numeros = [10, 5, 8, 99, 1, 4, 7, 20]
+console.log("Maior:", Math.max(...numeros), "Menor:", Math.min(...numeros))
 
 
 // EXERCÍCIO 19 - Ordenar nomes
@@ -319,7 +322,9 @@ console.log(contarVogais("javascript"))
 // Dica: use .sort() e .reverse()
 // ------------------------------------------------------------
 
-
+let nomes = ["Zeca", "Ana", "Bia"]
+console.log(nomes.sort())
+console.log(nomes.reverse())
 
 
 // EXERCÍCIO 20 - Filtrar pares
@@ -329,7 +334,9 @@ console.log(contarVogais("javascript"))
 // Dica: use .filter(function(numero) { return numero % 2 === 0 })
 // ------------------------------------------------------------
 
-
+let arrayVinte = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let pares = arrayVinte.filter(num => num % 2 === 0)
+console.log(pares)
 
 
 // ============================================================
