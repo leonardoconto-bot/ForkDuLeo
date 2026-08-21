@@ -241,7 +241,8 @@ alert("Acertou!")
 // Exemplo: saudacao("Maria") retorna "Olá, Maria!"
 // ------------------------------------------------------------
 
-
+function saudacao(nome) { return "Olá, " + nome + "!" }
+console.log(saudacao("Maria"))
 
 
 // EXERCÍCIO 14 - Número primo
@@ -252,7 +253,11 @@ alert("Acertou!")
 // algum divide o número sem resto (numero % i === 0).
 // ------------------------------------------------------------
 
-
+function ehPrimo(n) {
+    for (let i = 2; i < n; i++) if (n % i === 0) return false
+    return n > 1
+}
+console.log(ehPrimo(7))
 
 
 // EXERCÍCIO 15 - Inverter string
@@ -263,7 +268,8 @@ alert("Acertou!")
 // inverter, e join('') para voltar a ser string.
 // ------------------------------------------------------------
 
-
+function inverter(texto) { return texto.split('').reverse().join('') }
+console.log(inverter("javascript"))
 
 
 // EXERCÍCIO 16 - Contar vogais
@@ -274,7 +280,10 @@ alert("Acertou!")
 // e verifique cada letra com um for.
 // ------------------------------------------------------------
 
-
+function contarVogais(palavra) {
+    return (palavra.match(/[aeiou]/gi) || []).length
+}
+console.log(contarVogais("javascript"))
 
 
 // ============================================================
