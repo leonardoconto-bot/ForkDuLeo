@@ -188,7 +188,8 @@ else console.log("F")
 //   ... até "5 x 10 = 50"
 // ------------------------------------------------------------
 
-
+let num = 5
+for (let i = 1; i <= 10; i++) console.log(num * i)
 
 
 // EXERCÍCIO 10 - Contagem regressiva
@@ -197,7 +198,8 @@ else console.log("F")
 // No final, mostre "Feliz Ano Novo!" (ou qualquer mensagem).
 // ------------------------------------------------------------
 
-
+for (let i = 10; i >= 0; i--) console.log(i)
+    console.log("Feliz Ano Novo!")
 
 
 // EXERCÍCIO 11 - Somar números
@@ -207,7 +209,9 @@ else console.log("F")
 // Exemplo: se N = 5, resultado = 1+2+3+4+5 = 15
 // ------------------------------------------------------------
 
-
+let n = 5, soma = 0
+for (let i = 1; i <= n; i++) soma += i
+console.log(soma)
 
 
 // EXERCÍCIO 12 - Adivinhe o número
@@ -219,7 +223,10 @@ else console.log("F")
 // Dica: use prompt() para pedir o palpite do usuário.
 // ------------------------------------------------------------
 
-
+let secreto = Math.floor(Math.random() * 10) + 1
+let palpite
+while (palpite != secreto) palpite = prompt("Chute um número (1 a 10):")
+alert("Acertou!")
 
 
 // ============================================================
